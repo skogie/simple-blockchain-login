@@ -10,7 +10,7 @@ contract MemberContract {
 		bool exists;
 	}
 
-    mapping(address => Member) members;
+    	mapping(address => Member) members;
 
 	function signUp(string firstname, string lastname, string email, int age) public memberNotExsist returns(string, string, string, int) {
 		members[msg.sender] = Member({firstname: firstname, lastname: lastname, email: email, age: age, exists: true});
@@ -27,7 +27,7 @@ contract MemberContract {
 	}
 	
 	function getMember() public constant returns(string, string, string, int) {
-    	return (members[msg.sender].firstname, members[msg.sender].lastname, members[msg.sender].email, members[msg.sender].age);
+    		return (members[msg.sender].firstname, members[msg.sender].lastname, members[msg.sender].email, members[msg.sender].age);
 	}
 
 	function signIn() public constant memberExsist returns(bool) {
