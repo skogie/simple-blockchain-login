@@ -95,11 +95,11 @@ window.App = {
   }
 };
 
-var showp = () => {
+var showProfile = () => {
   var member;
     
   web3.eth.getCoinbase((error, coinbase) => {
-    // Log errors, if any.
+    
     if (error) {
       console.error(error);
     }
