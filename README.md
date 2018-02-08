@@ -5,6 +5,7 @@ Based on truffles webpack box, initialized with ```truffle unbox webpack```
 MetaMask
 
 ## run
+Install dependencies with ```npm install```
 Start the truffle blockchain with ```truffle develop```
 Start the frontend with ```npm run dev```
 
